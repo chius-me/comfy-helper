@@ -9,7 +9,7 @@ dependencies = [
   "httpx>=0.27,<1",
   "pydantic-settings>=2.6,<3",
   "uvicorn[standard]>=0.32,<1",
-  "websockets>=14,<16",
+  "websockets>=14,<18",
 ]
 
 [project.optional-dependencies]
