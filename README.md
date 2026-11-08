@@ -1,4 +1,19 @@
+<div align="center">
+
 # comfy-helper
+
+A gateway-first FastAPI service for named ComfyUI generation workflows.
+
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/chius-me/comfy-helper/actions/workflows/codeql.yml/badge.svg)](https://github.com/chius-me/comfy-helper/actions)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115+-009688?logo=fastapi&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11+-3776ab?logo=python&logoColor=white)
+
+[Architecture](./docs/architecture.md) · [Issues](https://github.com/chius-me/comfy-helper/issues)
+
+</div>
+
+---
 
 A gateway-first FastAPI service for named ComfyUI generation workflows. The API exposes provider-neutral profiles, jobs, and artifacts while keeping ComfyUI graph details inside workflow profiles and provider adapters.
 
@@ -91,3 +106,13 @@ uv run --extra dev ruff format --check .
 ```
 
 Jobs and artifact metadata are stored in SQLite (`COMFY_HELPER_DATABASE_PATH`). Artifact bytes are stored under `COMFY_HELPER_ARTIFACT_DIR` using temporary files and atomic rename. Restarting the gateway keeps job and artifact lookup as long as the DB and artifact directory remain.
+
+---
+
+## 📄 License
+
+Distributed under the [MIT](LICENSE) License.
+
+<div align="center">
+  <sub>Crafted with ❤️ by <a href="https://chius.cc">Chius</a> · Powered by FastAPI & ComfyUI</sub>
+</div>
